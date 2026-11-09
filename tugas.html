@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Garden</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f7;
+            margin: 20px;
+            color: #633344;
+        }
+
+        .kontainer {
+            width: 1000px;
+            max-width: 100%;
+            margin: auto;
+            border: 2px solid #d98ca3;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        .header {
+            background-color: #d98ca3;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .header p {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .konten {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aside {
+            background-color: #f4b6c2;
+            padding: 45px 25px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .aside h3 {
+            color: #8b3655;
+        }
+
+        .aside p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .nav-sidebar {
+            background-color: #f5d6a1;
+            padding: 45px 25px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .nav-sidebar h3 {
+            color: #80521e;
+        }
+
+        .nav-sidebar a {
+            display: block;
+            color: #633344;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .nav-sidebar a:hover {
+            color: #c04d78;
+            text-decoration: underline;
+        }
+
+        .aside img,
+        .nav-sidebar img {
+            width: 100%;
+            max-width: 180px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .main {
+            width: 65%;
+            background-color: #fff0f3;
+            padding: 25px;
+        }
+
+        .main h2 {
+            font-size: 23px;
+            color: #a04465;
+            margin-top: 5px;
+        }
+
+        .main h3 {
+            font-size: 17px;
+            color: #a04465;
+        }
+
+        .main p {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .daftar-bunga {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .bunga {
+            width: 48%;
+            background-color: white;
+            border: 1px solid #edc1ce;
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .bunga img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bunga h3 {
+            font-size: 16px;
+        }
+
+        .bunga p {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .informasi {
+            background-color: #fce1e8;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .informasi h3 {
+            margin-top: 0;
+        }
+
+        .footer {
+            background-color: #d98ca3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer p {
+            margin: 5px;
+        }
+
+        @media(max-width: 768px) {
+            .kontainer {
+                width: 95%;
+            }
+
+            .konten {
+                flex-wrap: wrap;
+            }
+
+            .sidebar {
+                width: 35%;
+            }
+
+            .main {
+                width: 65%;
+            }
+
+            .bunga {
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 426px) {
+            .konten {
+                flex-direction: column;
+            }
+
+            .sidebar, .main {
+                width: 100%;
+            }
+
+            .aside, .nav-sidebar {
+                padding: 30px;
+            }
+
+            .bunga {
+                width: 100%;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kontainer">
+
+        <div class="header">
+            <h1>🌸 FLOWER GARDEN 🌸</h1>
+            <p>Mengenal Keindahan dan Jenis-Jenis Bunga</p>
+        </div>
+
+        <div class="konten">
+
+            <div class="sidebar">
+
+                <div class="aside">
+                    <h3>BUNGA MAWAR</h3>
+                    <img src="Gambar/mawar.webp" alt="Bunga Mawar">
+                    <p>
+                        Bunga mawar dikenal sebagai simbol
+                        cinta, kasih sayang, dan keindahan.
+                        Bunga ini memiliki beragam warna
+                        seperti merah, putih, dan pink.
+                    </p>
+                </div>
+
+                <div class="nav-sidebar">
+                    <h3>BUNGA TULIP</h3>
+                    <img src="Gambar/tulip.webp" alt="Bunga Tulip">
+                    <p>
+                        Bunga tulip memiliki bentuk unik
+                        dengan warna yang beragam.
+                        Bunga ini sering melambangkan
+                        keindahan dan kebahagiaan.
+                    </p>
+
+                    <h3>NAVIGASI</h3>
+                    <a href="#beranda">Beranda</a>
+                    <a href="#matahari">Bunga Matahari</a>
+                    <a href="#anggrek">Bunga Anggrek</a>
+                    <a href="#melati">Bunga Melati</a>
+                    <a href="#lavender">Bunga Lavender</a>
+                </div>
+
+            </div>
+
+            <div class="main" id="beranda">
+
+                <h2>JENIS-JENIS BUNGA</h2>
+                <p>
+                    Bunga merupakan bagian tumbuhan yang
+                    memiliki bentuk dan warna yang beragam.
+                    Selain memperindah lingkungan, bunga
+                    juga memiliki aroma dan keunikan masing-masing.
+                    Berikut beberapa jenis bunga yang menarik
+                    untuk dikenal.
+                </p>
+
+                <div class="daftar-bunga">
+
+                    <div class="bunga" id="matahari">
+                        <img src="Gambar/bungamatahari.webp" alt="Bunga Matahari">
+                        <h3>Bunga Matahari</h3>
+                        <p>
+                            Bunga matahari memiliki warna
+                            kuning cerah dan bentuk yang
+                            menyerupai matahari. Bunga ini
+                            melambangkan kebahagiaan dan keceriaan.
+                        </p>
+                    </div>
+
+                    <div class="bunga" id="anggrek">
+                        <img src="Gambar/anggrek.png" alt="Bunga Anggrek">
+                        <h3>Bunga Anggrek</h3>
+                        <p>
+                            Bunga anggrek memiliki bentuk
+                            kelopak yang unik dan warna
+                            yang beragam. Bunga ini dikenal
+                            sebagai simbol keanggunan.
+                        </p>
+                    </div>
+
+                    <div class="bunga" id="melati">
+                        <img src="Gambar/melati.png" alt="Bunga Melati">
+                        <h3>Bunga Melati</h3>
+                        <p>
+                            Bunga melati memiliki kelopak
+                            berwarna putih dan aroma yang
+                            harum. Bunga ini sering dikaitkan
+                            dengan kesucian.
+                        </p>
+                    </div>
+
+                    <div class="bunga" id="lavender">
+                        <img src="Gambar/lavender.png" alt="Bunga Lavender">
+                        <h3>Bunga Lavender</h3>
+                        <p>
+                            Bunga lavender memiliki warna
+                            ungu yang cantik dan aroma khas.
+                            Bunga ini sering digunakan
+                            sebagai bahan aromaterapi.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="informasi">
+                    <h3>Manfaat Bunga</h3>
+                    <p>
+                        Bunga dapat memperindah lingkungan,
+                        menghasilkan aroma yang harum,
+                        menarik serangga penyerbuk, serta
+                        memberikan suasana yang menyenangkan.
+                        Oleh karena itu, kita perlu menjaga
+                        dan merawat berbagai jenis tanaman bunga.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <h3>FLOWER GARDEN</h3>
+            <p>Keindahan Bunga Memberikan Warna dalam Kehidupan.</p>
+            <p>© 2026 Flower Garden | Cintai dan Rawat Alam</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
